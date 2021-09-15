@@ -1,3 +1,7 @@
+.app{
+    background-image:;
+}
+
 /* oveflow */
 
 .oveflow {
@@ -17,7 +21,7 @@
     position: fixed;
     display: none;
     width: 100%;
-    animation: headerNotifyGrowth ease 0.3s;
+    animation: headerNotifyGrowth ease 0.5s;
     will-change: opacity;
     z-index: 10;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2)
@@ -1260,9 +1264,11 @@
 /* footer */
 
 .footer {
-    background-color: #F7F7F7;
-    border-top: 1px solid #DDDDDD;
+    background-color: #bcb0c2;
+    border-top: 1px solid #bcb0c2;
     margin-top: 68px;
+    margin-bottom:0;
+    
 }
 
 .footer_menu {
@@ -1274,7 +1280,7 @@
     content: "";
     position: absolute;
     display: none;
-    border-bottom: 1px solid #DDDDDD;
+    border-bottom: 1px solid #bcb0c2;
     bottom: 0;
     right: 0;
     left: 0;
@@ -1315,13 +1321,14 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    background-color: #bcb0c2;
 }
 
 .footer_botton::before {
     content: "";
     position: absolute;
     display: block;
-    border-top: 2px solid #DDDDDD;
+    border-top: 2px solid #bcb0c2;
     top: 0;
     right: 0;
     left: 0;
