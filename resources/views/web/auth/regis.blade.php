@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Customer | Registration</title>
+  <title>Tạo Tài khoản|Double H</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -15,18 +15,39 @@
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition register-page">
+
+<style >
+   
+    .btn-primary{
+      background-color: skyblue;
+      
+    }
+    .card-body{
+      background-color:whitesmoke;
+    }
+    .register-box{
+        background-color: skyblue;
+    }
+    .register-page{
+      background-image:
+       url(https://thumbs.dreamstime.com/b/seamless-pattern-white-sand-repeating-texture-waves-sandy-beach-background-empty-159526978.jpg );
+      background-repeat: repeat;
+      }
+
+</style>
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2.html"><b>Hoa</b>Khanh</a>
+    <a href="../../index2.html"><b>Double</b>H</a>
   </div>
+
 
   <div class="card">
     <div class="card-body register-card-body">
-      <p class="login-box-msg">Register a new membership</p>
+      <p class="login-box-msg">Tạo tài khoản </p>
 
       <form action="../../index.html" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Full name">
+          <input type="text" class="form-control" placeholder="Họ và Tên">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -42,7 +63,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" placeholder="Mật khẩu">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -50,7 +71,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Retype password">
+          <input type="password" class="form-control" placeholder="Nhập lại mật khẩu">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -62,19 +83,19 @@
             <div class="icheck-primary">
               <input type="checkbox" id="agreeTerms" name="terms" value="agree">
               <label for="agreeTerms">
-               I agree to the <a href="#">terms</a>
+               Tôi chấp nhận <a href="#" style="color: skyblue;">điều khoản</a>
               </label>
             </div>
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <button type="submit" class="btn btn-primary btn-block">Đăng ký!</button>
           </div>
           <!-- /.col -->
         </div>
       </form> 
 
-      <a href="{{   url("login")    }}" class="text-center">I already have a membership</a>
+      <a href="{{   url("login")    }}" class="text-center" style="color: skyblue;">Đã có tài khoản?</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->

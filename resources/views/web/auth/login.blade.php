@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Customer | Log in </title>
+  <title>Đăng nhập | DoubleH </title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -13,16 +13,27 @@
   <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+
+  <style>
+    .card-header{
+      background-color: skyblue;
+      border-top: 1px  ;
+    }
+    .login-page{
+      background-image: url(https://thumbs.dreamstime.com/b/seamless-pattern-white-sand-repeating-texture-waves-sandy-beach-background-empty-159526978.jpg);
+    }
+
+  </style>
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="../../index2.html" class="h1"><b>Hoa</b>Khanh</a>
+      <a href="../../index2.html" class="h1"><b>Double</b>H</a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Nhập tài khoản</p>
 
       <form action="../../index3.html" method="post">
         <div class="input-group mb-3">
@@ -34,7 +45,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" placeholder="Mật khẩu">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -46,19 +57,19 @@
             <div class="icheck-primary">
               <input type="checkbox" id="remember">
               <label for="remember">
-                Remember Me
+                Nhớ Tài Khoản
               </label>
             </div>
           </div>
           <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          <div class="col-4" style="color: skyblue;">
+            <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
       <p class="mb-0">
-        <a href="{{  url("register")  }}" class="text-center">Register a new membership</a>
+        <a href="{{  url("register")  }}" class="text-center" style="color: skyblue;">Đăng ký tài khoản</a>
       </p>
     </div>
     <!-- /.card-body -->
