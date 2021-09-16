@@ -1022,8 +1022,9 @@
     font-size: 3.2rem;
     color: #222222;
     line-height: 20px;
-    margin: 0;
+    margin: 5px;
     padding: 40px 0 24px;
+    background-image: none;
 }
 
 .recent_destinations_img {
