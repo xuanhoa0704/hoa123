@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('');
+    return view('admin.auth.login');
 });
 Route::get('/admin/login', function () {
     return view('admin.auth.login');
@@ -32,5 +32,5 @@ Route::get('/ecom', function () {
     return view('web.ecom');
 });
 Route::get('/admin/addticket', function () {
-    return view('admin.addticket');
+    return view('admin.addtic');
 });

@@ -109,7 +109,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">
+                <a href="/admin/addticket" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Quản lý vé xe</p>
                 </a>
