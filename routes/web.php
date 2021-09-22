@@ -32,5 +32,11 @@ Route::get('/ecom', function () {
     return view('web.ecom');
 });
 Route::get('/admin/addticket', function () {
-    return view('admin.addtic');
+    return view('admin.addtic.addtic');
+});
+Route::get('/admin/detailtic', function () {
+    return view('admin.addtic.detailaddtic');
+});
+Route::get('/admin/addbus', function () {
+    return view('admin.addbus');
 });
