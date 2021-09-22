@@ -14,11 +14,27 @@
   <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <style>
+      body{
+        background-image:url(https://thumbs.dreamstime.com/b/seamless-pattern-white-sand-repeating-texture-waves-sandy-beach-background-empty-159526978.jpg) ;
+      }
+      b{
+        color: royalblue;
+      }
+      a{
+        color: royalblue;
+      }
+      p{
+        color: royalblue;
+      }
+      
+      
+  </style>
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Admin</b>L0G||\|</a>
+    <a href="../../index2.html"><b >Admin</b>L0GIN</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
