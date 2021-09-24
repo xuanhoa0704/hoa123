@@ -1,6 +1,8 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\admin\ticksController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -34,9 +36,8 @@ Route::get('/ecom', function () {
 Route::get('/admin/addticket', function () {
     return view('admin.addtic.addtic');
 });
-Route::get('/admin/detailtic', function () {
-    return view('admin.addtic.detailaddtic');
-});
+Route::get('/admin/detailtic',[ticksController::class,'index']
+);
 Route::get('/admin/addbus', function () {
     return view('admin.addbus');
 });

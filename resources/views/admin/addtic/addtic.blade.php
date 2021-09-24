@@ -112,7 +112,7 @@ with font-awesome or any other icon font library -->
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./index.html" class="nav-link">
+                            <a href="{{url('/selecttime')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Quản lý xe bus</p>
                             </a>
@@ -154,6 +154,7 @@ with font-awesome or any other icon font library -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
+              alooo
               <li class="breadcrumb-item active">Project Add</li>
             </ol>
           </div>

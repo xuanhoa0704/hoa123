@@ -104,7 +104,7 @@ with font-awesome or any other icon font library -->
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
-                    <ul class="nav nav-treeview">
+                    <ul class="nav nav-treeview" class="hover-cart">
                         <li class="nav-item">
                             <a href="/admin/addticket" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
@@ -165,24 +165,28 @@ with font-awesome or any other icon font library -->
     <section class="content">
       <div class="row">
         <div class="col-md-6">
-            <table border="2">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Title</th>
-                        <th>Email</th>
-                        <th>Tools</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>Edit | Delete</td>
-                    </tr>
-                </tbody>
-            </table>
+            <table id="tickets" class="table table-bordered" border="2">
+              <tr>  
+                <th>id</th>
+                <th>name</th>
+                <th>status</th>
+                <th>description</th>
+                <th>busnumb</th>
+              </tr>
+              @forelse ($tickets as $item)
+                  <tr>
+                    <td>{{ $item->id }}</td>
+                    <th>{{ $item->name }}</th>
+                    <th>{{ $item->status }}</th>
+                    <th>{{ $item->description }}</th>
+                    <th>{{ $item->busnumb }}</th>
+                  </tr>
+              @empty
+                  <tr>
+                    <th colspan="5">non data</th>
+                  </tr>
+              @endforelse
+              </table>
         </div>
         
     </section>

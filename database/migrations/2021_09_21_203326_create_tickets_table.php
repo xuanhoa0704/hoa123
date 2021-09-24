@@ -16,7 +16,7 @@ class CreateTicketsTable extends Migration
         Schema::create('tickets', function (Blueprint $table) {
             $table->id();
             $table->string('name',50);
-            $table->tinyInteger("tinhtrang1")->default(1);
+            $table->tinyInteger("tinhtrang")->default(1);
             $table->string('mota',500);
             $table->bigInteger('id_bus')->unsigned();
             $table->foreign('id_bus')->references('id')->on('buses');
