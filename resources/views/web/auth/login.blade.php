@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
-  <link rel="stylesheet" href="index.html">
+  <link rel="stylesheet" href="../../../../index.html">
 
   <style>
     .card-header{
@@ -24,7 +24,6 @@
     .login-page{
       background-image: url(https://thumbs.dreamstime.com/b/seamless-pattern-white-sand-repeating-texture-waves-sandy-beach-background-empty-159526978.jpg);
     }
-
   </style>
 </head>
 <body class="hold-transition login-page">
