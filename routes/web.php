@@ -16,9 +16,12 @@ use App\Http\Controllers\admin\ticksController;
 */
 
 Route::get('/', function () {
+<<<<<<< Updated upstream
     return view('admin.auth.login');
 });
 Route::get('/admin/login', function () {
+=======
+>>>>>>> Stashed changes
     return view('admin.auth.login');
 });
 Route::get('/login', function () {
