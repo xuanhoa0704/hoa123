@@ -484,6 +484,8 @@
     border: 1px solid #DDDDDD;
 }
 
+
+
 .navbar_form_user_menu_scroll,
 .navbar_form_user_menu {
     position: absolute;
@@ -518,6 +520,8 @@
     background-color: rgba(0, 0, 0, 0.03);
 }
 
+
+
 .form_user_menu__link {
     text-decoration: none;
     font-size: 1.5rem;
@@ -542,6 +546,7 @@
     font-size: 1.5rem;
     margin-left: 8px;
 }
+
 
 .navbar_form_user__avatar {
     display: flex;

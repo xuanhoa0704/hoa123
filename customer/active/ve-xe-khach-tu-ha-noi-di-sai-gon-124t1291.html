@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="../../acssect/font/themify-icons-font/themify-icons/fonts/themify.woff">
     <link rel="stylesheet" href="../../acssect/font/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="/cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
    
     <style data-styled="" data-styled-version="5.3.0">
         .fiBJvr {
@@ -2202,12 +2204,7 @@
 
         /*!sc*/
 
-        .bBpvRb {
-            border: none;
-            border-radius: 0px;
-            height: $;
-            font-size: 18px;
-        }
+        
 
         /*!sc*/
 
@@ -3876,130 +3873,6 @@
 
         /*!sc*/
     </style>
-    <script>
-        if (typeof window !== 'undefined') {
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-            // ToDo check init when development
-            ga('create', 'UA-42076441-4', 'auto'); // Replace with your property ID.
-            ga('require', 'displayfeatures');
-            ga('require', 'ecommerce');
-            ga('send', 'pageview');
-            (function(w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    'gtm.start': new Date().getTime(),
-                    event: 'gtm.js'
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-M6PXMMJ');
-            dataLayer.push({
-                'language': 'vi',
-                'platform': 'femobile'
-            }) ! function(f, b, e, v, n, t, s) {
-                if (f.fbq) return;
-                n = f.fbq = function() {
-                    n.callMethod ?
-                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                };
-                if (!f._fbq) f._fbq = n;
-                n.push = n;
-                n.loaded = !0;
-                n.version = '2.0';
-                n.queue = [];
-                t = b.createElement(e);
-                t.async = !0;
-                t.src = v;
-                s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s)
-            }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '639150852886647');
-            fbq('track', 'PageView');
-
-            if (!sessionStorage.getItem('FullStory') && RegExp('/xe-*|/*-bus*').test(window.location.pathname) && Math.floor(Math.random() * 100) <= 2) {
-                ! function() {
-                    var analytics = window.analytics = window.analytics || [];
-                    if (!analytics.initialize)
-                        if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
-                        else {
-                            analytics.invoked = !0;
-                            analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"];
-                            analytics.factory = function(t) {
-                                return function() {
-                                    var e = Array.prototype.slice.call(arguments);
-                                    e.unshift(t);
-                                    analytics.push(e);
-                                    return analytics
-                                }
-                            };
-                            for (var t = 0; t < analytics.methods.length; t++) {
-                                var e = analytics.methods[t];
-                                analytics[e] = analytics.factory(e)
-                            }
-                            analytics.load = function(t, e) {
-                                var n = document.createElement("script");
-                                n.type = "text/javascript";
-                                n.async = !0;
-                                n.src = "https://cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
-                                var a = document.getElementsByTagName("script")[0];
-                                a.parentNode.insertBefore(n, a);
-                                analytics._loadOptions = e
-                            };
-                            analytics.SNIPPET_VERSION = "4.1.0";
-                            analytics.load("ufHOz8F2LNDwyYcDbchNYkxi5yIXmRzW");
-                            analytics.page();
-                            sessionStorage.setItem('FullStory', 1);
-                        }
-                }();
-            }
-
-            (function(i, s, o, g, r, a, m) {
-                i[r] = i[r] || function() {
-                        (i[r].q = i[r].q || []).push(arguments)
-                    },
-                    a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://cdnt.netcoresmartech.com/smartechclient.js', 'smartech');
-            smartech('create', 'ADGMOT35CHFLVDHBJNIG50K96BFE409HF24O9P7POB9BICHBHM50');
-            smartech('register', '098fec00afe3a76a3d46d8f1ac1967d8');
-            smartech('identify', '');
-
-            const appendChild = Element.prototype.appendChild;
-            const urlCatchers = [
-                "/AuthenticationService.Authenticate?",
-                "/QuotaService.RecordEvent?"
-            ];
-
-            Element.prototype.appendChild = function(element) {
-                const isGMapScript = element.tagName === 'SCRIPT' && /maps.googleapis.com/i.test(element.src);
-                const isGMapAccessScript = isGMapScript && urlCatchers.some(url => element.src.includes(url));
-
-                if (!isGMapAccessScript) {
-                    return appendChild.call(this, element);
-                }
-
-                return element;
-            };
-        }
-    </script>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" class="next-head" />
     <meta charSet="utf-8" class="next-head" />
     <title>Đặt vé xe từ Hà Nội đi Sài Gòn | VeXeRe.com</title>
@@ -4032,305 +3905,7 @@
 <body><noscript async=""><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=639150852886647&ev=PageView&noscript=1" /></noscript><noscript async=""><img src='https://www.googletagmanager.com/ns.html?id=GTM-M6PXMMJ' height='0' width='0' style='display:none;visibility:hidden;' /></noscript>
     <div
         id="__next">
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [{
-                    "@type": "ListItem",
-                    "position": 1,
-                    "item": {
-                        "@id": "https://vexere.com/vi-VN",
-                        "name": "Vé xe khách",
-                        "image": "https://storage.googleapis.com/fe-production/images/Home/logo.svg"
-                    }
-                }, {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "item": {
-                        "@id": "https://vexere.com/vi-VN/ve-xe-khach-tu-ha-noi-di-sai-gon-124t1291.html",
-                        "name": "xe đi Sài Gòn từ Hà Nội",
-                        "image": "https://storage.googleapis.com/fe-production/images/fb-thumbnail.jpg"
-                    }
-                }]
-            }
-        </script>
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org/",
-                "@type": "Product",
-                "name": "Vé xe từ Hà Nội đi Sài Gòn của các nhà xe A Ba,Hoàng Long - Hà Nội,Anh Khuyên (Hà Nội) ,Tý Nghĩa,Vân Tuyến",
-                "image": "static.vexere.com/production/images/1592302526499.jpeg",
-                "description": "Xe đi Sài Gòn từ Hà Nội giá vé 700000 -> 1300000 VND, từ 05:00 -> 21:00 của 11 hãng xe | Xem số điện thoại, giờ chạy, đánh giá các xe đi Sài Gòn tốt nhất: A Ba, Anh Khuyên (Hà Nội) , Đức Thịnh - Huế, Hoàng Long - Hà Nội, Hoàng Long (Đỏ), Queen Cafe, Queen Cafe Open Bus, Tý Nghĩa, Tín Nghĩa, Vân Tuyến, Xuân Trường (Quảng Ninh)... với loại xe giường nằm... | VeXeRe.com - Hệ thống Vé xe lớn nhất Việt Nam | Vé xe Tết 2021.",
-                "sku": "124t1291",
-                "mpn": "124t1291 28-11-2021",
-                "productionDate": "2021-09-28T00:00:00+07:00",
-                "releaseDate": "2021-09-28T00:00:00+07:00",
-                "brand": {
-                    "@type": "Thing",
-                    "name": "VeXeRe| Hệ thống đặt vé xe khách lớn nhất Việt Nam"
-                },
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "bestRating": 5,
-                    "ratingValue": "2.788888888888889",
-                    "ratingCount": "70",
-                    "worstRating": 0
-                },
-                "offers": {
-                    "@type": "AggregateOffer",
-                    "availability": "http://schema.org/InStock",
-                    "lowPrice": "700000",
-                    "highPrice": "1300000",
-                    "priceCurrency": "VND",
-                    "offerCount": 0
-                },
-                "additionalProperty": [{
-                    "@type": "PropertyValue",
-                    "name": "Loại xe",
-                    "value": ["giường nằm"]
-                }, {
-                    "@type": "PropertyValue",
-                    "name": "Nhà xe hổ trợ đặt vé online",
-                    "value": []
-                }, {
-                    "@type": "PropertyValue",
-                    "name": "Chiều dài tuyến đường",
-                    "value": 1760
-                }, {
-                    "@type": "PropertyValue",
-                    "name": "Thời gian di chuyển",
-                    "value": 35.6
-                }, {
-                    "@type": "PropertyValue",
-                    "name": "Giá vé trung bình",
-                    "value": 839583
-                }, {
-                    "@type": "PropertyValue",
-                    "name": "Số lượng chuyến xe",
-                    "value": 29
-                }, {
-                    "@type": "PropertyValue",
-                    "name": "Nhà xe khuyến mãi",
-                    "value": ["A Ba", "Hoàng Long - Hà Nội", "Anh Khuyên (Hà Nội) ", "Tý Nghĩa", "Vân Tuyến", "Hoàng Long (Đỏ)", "Queen Cafe", "Queen Cafe Open Bus", "Tín Nghĩa", "Xuân Trường (Quảng Ninh)", "Đức Thịnh - Huế"]
-                }],
-                "review": [{
-                    "@type": "Review",
-                    "datePublished": "09-03-2019",
-                    "reviewBody": "",
-                    "author": {
-                        "@type": "Thing",
-                        "name": "Huy "
-                    },
-                    "reviewRating": {
-                        "@type": "Rating",
-                        "bestRating": 5,
-                        "ratingValue": 4,
-                        "worstRating": 0
-                    }
-                }, {
-                    "@type": "Review",
-                    "datePublished": "24-10-2018",
-                    "reviewBody": "",
-                    "author": {
-                        "@type": "Thing",
-                        "name": "Hải"
-                    },
-                    "reviewRating": {
-                        "@type": "Rating",
-                        "bestRating": 5,
-                        "ratingValue": 3,
-                        "worstRating": 0
-                    }
-                }, {
-                    "@type": "Review",
-                    "datePublished": "01-01-2019",
-                    "reviewBody": "",
-                    "author": {
-                        "@type": "Thing",
-                        "name": "Tình"
-                    },
-                    "reviewRating": {
-                        "@type": "Rating",
-                        "bestRating": 5,
-                        "ratingValue": 3,
-                        "worstRating": 0
-                    }
-                }, {
-                    "@type": "Review",
-                    "datePublished": "30-08-2020",
-                    "reviewBody": "",
-                    "author": {
-                        "@type": "Thing",
-                        "name": "Phạm Tiến Quỳnh"
-                    },
-                    "reviewRating": {
-                        "@type": "Rating",
-                        "bestRating": 5,
-                        "ratingValue": 3,
-                        "worstRating": 0
-                    }
-                }, {
-                    "@type": "Review",
-                    "datePublished": "18-01-2021",
-                    "reviewBody": "",
-                    "author": {
-                        "@type": "Thing",
-                        "name": "Nguyễn Quyết Đạt"
-                    },
-                    "reviewRating": {
-                        "@type": "Rating",
-                        "bestRating": 5,
-                        "ratingValue": 3,
-                        "worstRating": 0
-                    }
-                }]
-            }
-        </script>
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org/",
-                "@type": "Organization",
-                "@id": "https://vexere.com/#Organization",
-                "name": "VeXeRe| Hệ thống đặt vé xe khách lớn nhất Việt Nam",
-                "url": "https://vexere.com/",
-                "sameAs": "https://www.linkedin.com/company/vexere-com/",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://storage.googleapis.com/fe-production/icon_vxr_full.svg"
-                },
-                "contactPoint": [{
-                    "@type": "ContactPoint",
-                    "telephone": "18001060",
-                    "contactType": "sales",
-                    "areaServed": "VN"
-                }, {
-                    "@type": "ContactPoint",
-                    "telephone": "1900888684",
-                    "contactType": "technical support",
-                    "areaServed": "VN",
-                    "availableLanguage": ["EN", "VN"]
-                }, {
-                    "@type": "ContactPoint",
-                    "telephone": "1900969681",
-                    "contactType": "customer support",
-                    "areaServed": "VN",
-                    "availableLanguage": ["EN", "VN"]
-                }]
-            }
-        </script>
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org/",
-                "@type": "WebSite",
-                "name": "VeXeRe - Hệ thống đặt vé xe khách lớn nhất Việt Nam",
-                "alternateName": "VeXeRe.com - Hệ thống đặt vé xe khách lớn nhất Việt Nam",
-                "url": "https://vexere.com/"
-            }
-        </script>
-        <script type="application/ld+json">
-            [{
-                "@context": "https://schema.org/",
-                "@type": "SoftwareApplication",
-                "name": "VeXeRe - Ứng dụng tìm kiếm và đặt vé xe khách",
-                "operatingSystem": "ANDROID",
-                "applicationCategory": "http://schema.org/TravelApplication",
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "bestRating": 5,
-                    "ratingValue": "2.788888888888889",
-                    "ratingCount": "70",
-                    "worstRating": 0
-                },
-                "offers": {
-                    "@type": "AggregateOffer",
-                    "availability": "http://schema.org/InStock",
-                    "lowPrice": "700000",
-                    "highPrice": "1300000",
-                    "priceCurrency": "VND",
-                    "offerCount": 0
-                }
-            }, {
-                "@context": "https://schema.org/",
-                "@type": "SoftwareApplication",
-                "name": "VeXeRe.com - Đặt vé xe khách online",
-                "operatingSystem": "iOS",
-                "applicationCategory": "http://schema.org/TravelApplication",
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "bestRating": 5,
-                    "ratingValue": "2.788888888888889",
-                    "ratingCount": "70",
-                    "worstRating": 0
-                },
-                "offers": {
-                    "@type": "AggregateOffer",
-                    "availability": "http://schema.org/InStock",
-                    "lowPrice": "700000",
-                    "highPrice": "1300000",
-                    "priceCurrency": "VND",
-                    "offerCount": 0
-                }
-            }]
-        </script>
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org/",
-                "@type": "LocalBusiness",
-                "@id": "https://vexere.com/",
-                "name": "VeXeRe - Hệ thống đặt vé xe khách lớn nhất Việt Nam",
-                "alternateName": "VeXeRe.com - Hệ thống đặt vé xe khách lớn nhất Việt Nam",
-                "url": "https://vexere.com/",
-                "priceRange": "700000 - 1300000",
-                "image": "https://storage.googleapis.com/fe-production/icon_vxr_full.svg",
-                "telephone": "1900888684",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://storage.googleapis.com/fe-production/icon_vxr_full.svg"
-                },
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Tầng 3, toà nhà 101 Láng Hạ, Phường Láng Hạ, Quận Đống Đa, Hà Nội, 11513",
-                    "addressLocality": "Đống Đa",
-                    "addressRegion": "Hà Nội",
-                    "postalCode": "11513",
-                    "addressCountry": {
-                        "@type": "Country",
-                        "name": "VN"
-                    }
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": "21.0137821",
-                    "longitude": "105.8135694"
-                },
-                "openingHoursSpecification": {
-                    "@type": "OpeningHoursSpecification",
-                    "opens": "08:30",
-                    "closes": "18:00",
-                    "dayOfWeek": ["http://schema.org/Monday", "http://schema.org/Tuesday", "http://schema.org/Wednesday", "http://schema.org/Thursday", "http://schema.org/Friday", "http://schema.org/Saturday"]
-                },
-                "contactPoint": [{
-                    "@type": "ContactPoint",
-                    "telephone": "1900888843",
-                    "contactType": "sales",
-                    "areaServed": "VN",
-                    "availableLanguage": "VN"
-                }, {
-                    "@type": "ContactPoint",
-                    "telephone": "1900888684",
-                    "contactType": "technical support",
-                    "areaServed": "VN",
-                    "availableLanguage": "VN"
-                }, {
-                    "@type": "ContactPoint",
-                    "telephone": "1900969681",
-                    "contactType": "customer support",
-                    "areaServed": "VN",
-                    "availableLanguage": "VN"
-                }]
-            }
-        </script>
+        
         <div id="loadingContainer" class="loading__LoadingContainer-sc-1dclnqz-0 dKZTJA">
             <div id="loadingWrapper" class="loading__LoadingWrapper-sc-1dclnqz-2 ljuRu">
                 <div class="loading__LoadingStyled-sc-1dclnqz-1 hbnDkB"></div>
@@ -4394,20 +3969,20 @@
                                     </div>
                                     <div class="navbar_form_user_menu">
                                         <ul class="form_user_menu_list">
-                                            <li class="form_user_menu_item">
-                                                <p><a href="resources/views/web/auth/login.html" class="form_user_menu__link bold">Đăng nhập</a></p>
+                                            <li class="form_user_menu_item2">
+                                                <p><a href="/resources/views/web/auth/login.html" class="form_user_menu__link bold">Đăng nhập</a></p>
                                             </li>
-                                            <li class="form_user_menu_item">
-                                                <a href="resources/views/web/auth/regis.html" class="form_user_menu__link">Đăng kí</a>
+                                            <li class="form_user_menu_item2">
+                                                <a href="/resources/views/web/auth/regis.html" class="form_user_menu__link">Đăng kí</a>
                                             </li>
                                             <li class="form_user_menu_item__separate"></li>
-                                            <li class="form_user_menu_item">
+                                            <li class="form_user_menu_item2">
                                                 <a href="#" class="form_user_menu__link">Thuê xe</a>
                                             </li>
-                                            <li class="form_user_menu_item">
+                                            <li class="form_user_menu_item2">
                                                 <a href="#" class="form_user_menu__link">Đặt trước</a>
                                             </li>
-                                            <li class="form_user_menu_item">
+                                            <li class="form_user_menu_item2">
                                                 <a href="#" class="form_user_menu__link">Trợ giúp</a>
                                             </li>
                                         </ul>
@@ -4472,260 +4047,9 @@
                         </div>
                     </div>
                     <!-- header menu -->
-                    <div class="grid wide hide-on-mobile-tablet">
-                        <div class="header_menu">
-                            <ul class="header_menu__list">
-                                <li class="header_menu__item">
-                                    <div class="header_menu__item-seperate"></div>
-                                    <div class="header_menu_location">
-                                        <h4 class="header_menu__heading">Địa điểm</h4>
-                                        <div class="header_menu_input">
-                                            <input type="text" placeholder="Bạn sắp đi đâu?" class="header_menu_location_input">
-                                            <div class="header_menu_input_close">
-                                                <i class="fas fa-times menu_input_close_icon"></i>
-                                            </div>
-                                        </div>
-                                        <div class="header_menu_search">
-                                            <h3 class="header_menu_search_heading">MỌI LÚC, MỌI NƠI</h3>
-                                            <div class="header_menu_search_flexible">
-                                                <h3 class="menu_search_flexible_heading">Tìm kiếm linh hoạt</h3>
-                                                <i class="fas fa-search-dollar menu_search_flexible_icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header_menu__item">
-                                    <div class="header_menu__item-seperate"></div>
-                                    <div class="header_menu_checkin">
-                                        <h4 class="header_menu__heading">Nhận phòng</h4>
-                                        <p class="header_menu__sub">Thêm ngày</p>
-                                        <div class="menu_checkin_date">
-                                            <div class="menu_checkin_date_times">
-                                                <input type="date" class="menu_checkin_date_times_input">
-                                                <div class="menu_checkin_date_times_btn">
-                                                    <botton class="menu_checkin_date_times_send">SEND</botton>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header_menu__item">
-                                    <div class="header_menu__item-seperate"></div>
-                                    <div class="header_menu_check">
-                                        <h4 class="header_menu__heading">Trả phòng</h4>
-                                        <p class="header_menu__sub">Thêm ngày</p>
-                                        <div class="menu_check_date">
-                                            <div class="menu_checkin_date_times">
-                                                <input type="date" class="menu_checkin_date_times_input">
-                                                <div class="menu_checkin_date_times_btn">
-                                                    <botton class="menu_checkin_date_times_send">SEND</botton>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header_menu__item">
-                                    <div class="header_menu_guest">
-                                        <div class="header_menu_guest-with_search">
-                                            <h4 class="header_menu__heading">Khách</h4>
-                                            <p class="header_menu__sub">Thêm Khách</p>
-                                            <div class="header_menu_guest_Selection">
-                                                <ul class="header_menu_guest_Selection__list">
-                                                    <li class="header_menu_guest_Selection__item">
-                                                        <div class="menu_guest_Selection_Adults">
-                                                            <div class="menu_guest_Selection_age">
-                                                                <h3 class="menu_guest_Selection_age_heading">Người lớn</h3>
-                                                                <p class="menu_guest_Selection_age_sub">Từ 13 tuổi trở lên</p>
-                                                            </div>
-                                                            <div class="menu_guest_Selection_quantity">
-                                                                <div class="menu_guest_Selection_quantity_plus noclick">
-                                                                    <i class="fas fa-minus quantity_plus_icon noclick"></i>
-                                                                </div>
-                                                                <span class="menu_guest_Selection_quantity_munber">0</span>
-                                                                <div class="menu_guest_Selection_quantity_minus">
-                                                                    <i class="fas fa-plus quantity_plus_icon"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="header_menu_guest_Selection__item">
-                                                        <div class="menu_guest_Selection_Adults">
-                                                            <div class="menu_guest_Selection_age">
-                                                                <h3 class="menu_guest_Selection_age_heading">Trẻ em</h3>
-                                                                <p class="menu_guest_Selection_age_sub">Độ tuổi 2 - 12</p>
-                                                            </div>
-                                                            <div class="menu_guest_Selection_quantity">
-                                                                <div class="menu_guest_Selection_quantity_plus noclick">
-                                                                    <i class="fas fa-minus quantity_plus_icon noclick"></i>
-                                                                </div>
-                                                                <span class="menu_guest_Selection_quantity_munber">0</span>
-                                                                <div class="menu_guest_Selection_quantity_minus">
-                                                                    <i class="fas fa-plus quantity_plus_icon"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="header_menu_guest_Selection__item">
-                                                        <div class="menu_guest_Selection_Adults">
-                                                            <div class="menu_guest_Selection_age">
-                                                                <h3 class="menu_guest_Selection_age_heading">Em bé</h3>
-                                                                <p class="menu_guest_Selection_age_sub">Dưới 2</p>
-                                                            </div>
-                                                            <div class="menu_guest_Selection_quantity">
-                                                                <div class="menu_guest_Selection_quantity_plus noclick">
-                                                                    <i class="fas fa-minus quantity_plus_icon noclick"></i>
-                                                                </div>
-                                                                <span class="menu_guest_Selection_quantity_munber">0</span>
-                                                                <div class="menu_guest_Selection_quantity_minus">
-                                                                    <i class="fas fa-plus quantity_plus_icon"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="header_menu_guest_search">
-                                            <div class="menu_guest_search_form">
-                                                <i class="fas fa-search guest_search-icon"></i>
-                                                <h4 class="guest_search-icon_btn">
-                                                    Tìm Kiếm
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
         
                     <!-- header menu ipab -->
-                    <div class="grid wide">
-                        <div class="header_menu_ipab">
-                            <ul class="header_menu__list_ipab">
-                                <li class="header_menu__item">
-                                    <div class="header_menu__item-seperate"></div>
-                                    <div class="header_menu_location">
-                                        <h4 class="header_menu__heading">Địa điểm</h4>
-                                        <div class="header_menu_input">
-                                            <input type="text" placeholder="Bạn sắp đi đâu?" class="header_menu_location_input">
-                                            <div class="header_menu_input_close">
-                                                <i class="fas fa-times menu_input_close_icon"></i>
-                                            </div>
-                                        </div>
-                                        <div class="header_menu_search">
-                                            <h3 class="header_menu_search_heading">MỌI LÚC, MỌI NƠI</h3>
-                                            <div class="header_menu_search_flexible">
-                                                <h3 class="menu_search_flexible_heading">Tìm kiếm linh hoạt</h3>
-                                                <i class="ti-angle-right menu_search_flexible_icon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header_menu__item">
-                                    <div class="header_menu__item-seperate"></div>
-                                    <div class="header_menu_checkin">
-                                        <h4 class="header_menu__heading">Nhận phòng</h4>
-                                        <p class="header_menu__sub">Thêm ngày</p>
-                                        <div class="menu_checkin_date">
-                                            <div class="menu_checkin_date_times">
-                                                <input type="date" class="menu_checkin_date_times_input">
-                                                <div class="menu_checkin_date_times_btn">
-                                                    <botton class="menu_checkin_date_times_send">SEND</botton>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header_menu__item">
-                                    <div class="header_menu__item-seperate"></div>
-                                    <div class="header_menu_check">
-                                        <h4 class="header_menu__heading">Trả phòng</h4>
-                                        <p class="header_menu__sub">Thêm ngày</p>
-                                        <div class="menu_check_date">
-                                            <div class="menu_checkin_date_times">
-                                                <input type="date" class="menu_checkin_date_times_input">
-                                                <div class="menu_checkin_date_times_btn">
-                                                    <botton class="menu_checkin_date_times_send">SEND</botton>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header_menu__item">
-                                    <div class="header_menu_guest">
-                                        <div class="header_menu_guest-with_search">
-                                            <h4 class="header_menu__heading">Khách</h4>
-                                            <p class="header_menu__sub">Thêm Khách</p>
-                                            <div class="header_menu_guest_Selection">
-                                                <ul class="header_menu_guest_Selection__list">
-                                                    <li class="header_menu_guest_Selection__item">
-                                                        <div class="menu_guest_Selection_Adults">
-                                                            <div class="menu_guest_Selection_age">
-                                                                <h3 class="menu_guest_Selection_age_heading">Người lớn</h3>
-                                                                <p class="menu_guest_Selection_age_sub">Từ 13 tuổi trở lên</p>
-                                                            </div>
-                                                            <div class="menu_guest_Selection_quantity">
-                                                                <div class="menu_guest_Selection_quantity_plus noclick">
-                                                                    <i class="fas fa-minus quantity_plus_icon noclick"></i>
-                                                                </div>
-                                                                <span class="menu_guest_Selection_quantity_munber">0</span>
-                                                                <div class="menu_guest_Selection_quantity_minus">
-                                                                    <i class="fas fa-plus quantity_plus_icon"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="header_menu_guest_Selection__item">
-                                                        <div class="menu_guest_Selection_Adults">
-                                                            <div class="menu_guest_Selection_age">
-                                                                <h3 class="menu_guest_Selection_age_heading">Trẻ em</h3>
-                                                                <p class="menu_guest_Selection_age_sub">Độ tuổi 2 - 12</p>
-                                                            </div>
-                                                            <div class="menu_guest_Selection_quantity">
-                                                                <div class="menu_guest_Selection_quantity_plus noclick">
-                                                                    <i class="fas fa-minus quantity_plus_icon noclick"></i>
-                                                                </div>
-                                                                <span class="menu_guest_Selection_quantity_munber">0</span>
-                                                                <div class="menu_guest_Selection_quantity_minus">
-                                                                    <i class="fas fa-plus quantity_plus_icon"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="header_menu_guest_Selection__item">
-                                                        <div class="menu_guest_Selection_Adults">
-                                                            <div class="menu_guest_Selection_age">
-                                                                <h3 class="menu_guest_Selection_age_heading">Em bé</h3>
-                                                                <p class="menu_guest_Selection_age_sub">Dưới 2</p>
-                                                            </div>
-                                                            <div class="menu_guest_Selection_quantity">
-                                                                <div class="menu_guest_Selection_quantity_plus noclick">
-                                                                    <i class="fas fa-minus quantity_plus_icon noclick"></i>
-                                                                </div>
-                                                                <span class="menu_guest_Selection_quantity_munber">0</span>
-                                                                <div class="menu_guest_Selection_quantity_minus">
-                                                                    <i class="fas fa-plus quantity_plus_icon"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="header_menu_guest_search">
-                                            <div class="menu_guest_search_form">
-                                                <i class="fas fa-search guest_search-icon"></i>
-                                                <h4 class="guest_search-icon_btn">
-                                                    Tìm Kiếm
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                     <!-- slider -->
                     <div class="grid wide">
                         <div class="header_slider">
@@ -4754,7 +4078,7 @@
                                             <div class="ant-col DesktopSearchWidget2__InputCol-sc-18055jv-15 DesktopSearchWidget2__FromInputCol-sc-18055jv-16 kdDLMZ ghyztI ant-col-xs-24 ant-col-md-9">
                                                 <div class="DesktopSearchWidget2__SelectWrapper-sc-18055jv-10 hYEcCd">
                                                     <div class="VXRSelect2__SelectWrapper-tefulz-1 brqlwJ">
-                                                        <div class="VXRSelect2__SelectIcon-tefulz-3 dzQXyb"><svg class="DesktopSearchWidget2__IconToStyled-sc-18055jv-0 KokFo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.781 16"><defs><style>.svg-location<!-- -->{<!-- -->fill:#5090e9<!-- -->}</style></defs><path class="svg-location" d="M5.89 0A5.9 5.9 0 0 0 0 5.891 5.746 5.746 0 0 0 .517 8.3a37.14 37.14 0 0 0 5.127 7.591.328.328 0 0 0 .5 0A37.159 37.159 0 0 0 11.266 8.3a5.743 5.743 0 0 0 .515-2.4A5.9 5.9 0 0 0 5.89 0zm0 8.95a3.06 3.06 0 1 1 3.06-3.06 3.063 3.063 0 0 1-3.06 3.06z"></path></svg></div><input
+                                                        <div class="VXRSelect2__SelectIcon-tefulz-3 dzQXyb"><svg class="DesktopSearchWidget2__IconToStyled-sc-18055jv-0 KokFo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.781 16"><defs><style></style></defs><path class="svg-location" d="M5.89 0A5.9 5.9 0 0 0 0 5.891 5.746 5.746 0 0 0 .517 8.3a37.14 37.14 0 0 0 5.127 7.591.328.328 0 0 0 .5 0A37.159 37.159 0 0 0 11.266 8.3a5.743 5.743 0 0 0 .515-2.4A5.9 5.9 0 0 0 5.89 0zm0 8.95a3.06 3.06 0 1 1 3.06-3.06 3.063 3.063 0 0 1-3.06 3.06z"></path></svg></div><input
                                                             type="text" class="VXRSelect2__Input-tefulz-0 gCuTCt ant-input VXRSelect__input" value="" placeholder="Tỉnh, thành phố nơi đi" data-testid="SearchWidget.from" data-id="SearchWidget.from" />
                                                         <ul class="VXRSelect2__DropdownWrapper-tefulz-2 RA-DQl ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical">
                                                             <li class="ant-select-dropdown-menu-item-group">
@@ -4787,7 +4111,7 @@
                                         <div class="ant-col DesktopSearchWidget2__InputCol-sc-18055jv-15 DesktopSearchWidget2__ToInputCol-sc-18055jv-17 kdDLMZ iCoDec ant-col-xs-24 ant-col-md-9">
                                             <div class="DesktopSearchWidget2__SelectWrapper-sc-18055jv-10 DesktopSearchWidget2__SelectWrapperTo-sc-18055jv-11 hYEcCd ftpCuz">
                                                 <div class="VXRSelect2__SelectWrapper-tefulz-1 brqlwJ">
-                                                    <div class="VXRSelect2__SelectIcon-tefulz-3 dzQXyb"><svg class="DesktopSearchWidget2__IconToStyled-sc-18055jv-0 KokFo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.781 16"><defs><style>.svg-location<!-- -->{<!-- -->fill:#5090e9<!-- -->}</style></defs><path class="svg-location" d="M5.89 0A5.9 5.9 0 0 0 0 5.891 5.746 5.746 0 0 0 .517 8.3a37.14 37.14 0 0 0 5.127 7.591.328.328 0 0 0 .5 0A37.159 37.159 0 0 0 11.266 8.3a5.743 5.743 0 0 0 .515-2.4A5.9 5.9 0 0 0 5.89 0zm0 8.95a3.06 3.06 0 1 1 3.06-3.06 3.063 3.063 0 0 1-3.06 3.06z"></path></svg></div><input
+                                                    <div class="VXRSelect2__SelectIcon-tefulz-3 dzQXyb"><svg class="DesktopSearchWidget2__IconToStyled-sc-18055jv-0 KokFo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.781 16"><defs><style></style></defs><path class="svg-location" d="M5.89 0A5.9 5.9 0 0 0 0 5.891 5.746 5.746 0 0 0 .517 8.3a37.14 37.14 0 0 0 5.127 7.591.328.328 0 0 0 .5 0A37.159 37.159 0 0 0 11.266 8.3a5.743 5.743 0 0 0 .515-2.4A5.9 5.9 0 0 0 5.89 0zm0 8.95a3.06 3.06 0 1 1 3.06-3.06 3.063 3.063 0 0 1-3.06 3.06z"></path></svg></div><input
                                                         type="text" class="VXRSelect2__Input-tefulz-0 gCuTCt ant-input VXRSelect__input" value="" placeholder="Tỉnh, thành phố nơi đến" data-testid="SearchWidget.to" data-id="SearchWidget.to" />
                                                     <ul class="VXRSelect2__DropdownWrapper-tefulz-2 RA-DQl ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical">
                                                         <li class="ant-select-dropdown-menu-item-group">
@@ -4961,7 +4285,7 @@
                                     class="ant-rate-star-second"><i aria-label="icon: star" class="anticon anticon-star"><svg viewBox="64 64 896 896" focusable="false" class="" data-icon="star" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path></svg></i></div>
                     </div>
                     </li>
-                    </ul><span style="font-weight:">trở lên (4)</span></div>
+                    </ul><span style="font-weight:unset">trở lên (4)</span></div>
             <div style="cursor:pointer" class="Rates__GroupRate-sc-1ioptsc-1 dfQbde">
                 <ul class="ant-rate ant-rate-disabled Rates__RateStyle-sc-1ioptsc-0 kUnkmu" tabindex="-1" role="radiogroup">
                     <li class="ant-rate-star ant-rate-star-full">
@@ -4999,7 +4323,7 @@
                     class="ant-rate-star-second"><i aria-label="icon: star" class="anticon anticon-star"><svg viewBox="64 64 896 896" focusable="false" class="" data-icon="star" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path></svg></i></div>
             </div>
         </li>
-        </ul><span style="font-weight:">trở lên (10)</span></div>
+        </ul><span style="font-weight:unset">trở lên (10)</span></div>
         <div style="cursor:pointer" class="Rates__GroupRate-sc-1ioptsc-1 dfQbde">
             <ul class="ant-rate ant-rate-disabled Rates__RateStyle-sc-1ioptsc-0 kUnkmu" tabindex="-1" role="radiogroup">
                 <li class="ant-rate-star ant-rate-star-full">
@@ -5037,7 +4361,7 @@
                     class="ant-rate-star-second"><i aria-label="icon: star" class="anticon anticon-star"><svg viewBox="64 64 896 896" focusable="false" class="" data-icon="star" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path></svg></i></div>
             </div>
         </li>
-        </ul><span style="font-weight:">trở lên (4)</span></div>
+        </ul><span style="font-weight:unset">trở lên (4)</span></div>
         </div>
         </div>
         </div>
@@ -5065,7 +4389,7 @@
                 <div id="ticket-v2CKMGEP0FGgIxMiICMDAw87oLOgoyMi0xMS0yMDIxSBhQHWgAqAHgZQ" data-company-name="Vân Tuyến" data-company-id="13024" data-company-full-trip="true" data-company-selling-config="DEFAULT" class="TicketWrapper__TicketContainer-unfwwx-0 eENoGW">
                     <div class="TicketPC__Container-sc-1mxgwjh-0 pzwdb">
                         <div class="TicketPC__BodyFlex-sc-1mxgwjh-1 iuBnBn ticket">
-                            <div class="image" style="background-image:;position:relative"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1614156656852.jpeg?w=250&amp;h=250" alt="Vân Tuyến" /><img class="sticker lazyload" /></div>
+                            <div class="image" style="background-image:unset"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1614156656852.jpeg?w=250&amp;h=250" alt="Vân Tuyến" /><img class="sticker lazyload" /></div>
                             <div class="TicketPC__RightBody-sc-1mxgwjh-3 iTDXJa">
                                 <div class="TicketPC__TripInfo-sc-1mxgwjh-6 dEwAnK">
                                     <div class="bus-info">
@@ -5117,7 +4441,7 @@
         <div id="ticket-v2CKMGEP0FGgIwOCICMDAwtr-9AjoKMjItMTEtMjAyMUgYUB1oAKgBso4C" data-company-name="Hoàng Long (Đỏ)" data-company-id="34610" data-company-full-trip="true" data-company-selling-config="DEFAULT" class="TicketWrapper__TicketContainer-unfwwx-0 eENoGW">
             <div class="TicketPC__Container-sc-1mxgwjh-0 pzwdb">
                 <div class="TicketPC__BodyFlex-sc-1mxgwjh-1 iuBnBn ticket">
-                    <div class="image" style="background-image:;position:relative"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1597228847150.jpeg?w=250&amp;h=250" alt="Hoàng Long (Đỏ)" /><img class="sticker lazyload" /></div>
+                    <div class="image" style="background-image:unset"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1597228847150.jpeg?w=250&amp;h=250" alt="Hoàng Long (Đỏ)" /><img class="sticker lazyload" /></div>
                     <div class="TicketPC__RightBody-sc-1mxgwjh-3 iTDXJa">
                         <div class="TicketPC__TripInfo-sc-1mxgwjh-6 dEwAnK">
                             <div class="bus-info">
@@ -5168,7 +4492,7 @@
         <div id="ticket-v2CPmxCRD9BRoCMTgiAjAwMIeSvQE6CjIyLTExLTIwMjFIGFAdaACoAf_oAQ" data-company-name="Queen Cafe Open Bus" data-company-id="29823" data-company-full-trip="false" data-company-selling-config="DEFAULT" class="TicketWrapper__TicketContainer-unfwwx-0 eENoGW">
             <div class="TicketPC__Container-sc-1mxgwjh-0 pzwdb">
                 <div class="TicketPC__BodyFlex-sc-1mxgwjh-1 iuBnBn ticket">
-                    <div class="image" style="background-image:;position:relative"><img class="operator lazyload" data-src="//static.vexere.com/c/i/29823/xe-queen-cafe-open-bus-VeXeRe-4C3rW6G-1000x600.jpeg?w=250&amp;h=250" alt="Queen Cafe Open Bus" /><img class="sticker lazyload" /></div>
+                    <div class="image" style="background-image:unset"><img class="operator lazyload" data-src="//static.vexere.com/c/i/29823/xe-queen-cafe-open-bus-VeXeRe-4C3rW6G-1000x600.jpeg?w=250&amp;h=250" alt="Queen Cafe Open Bus" /><img class="sticker lazyload" /></div>
                     <div class="TicketPC__RightBody-sc-1mxgwjh-3 iTDXJa">
                         <div class="TicketPC__TripInfo-sc-1mxgwjh-6 dEwAnK">
                             <div class="bus-info">
@@ -5219,7 +4543,7 @@
         <div id="ticket-v2CILaCRCB2gkaAjA4IgIwMDD2lgs6CjIyLTExLTIwMjFIGFAdqAHGVg" data-company-name="A Ba" data-company-id="11078" data-company-full-trip="true" data-company-selling-config="DEFAULT" class="TicketWrapper__TicketContainer-unfwwx-0 eENoGW">
             <div class="TicketPC__Container-sc-1mxgwjh-0 pzwdb">
                 <div class="TicketPC__BodyFlex-sc-1mxgwjh-1 iuBnBn ticket">
-                    <div class="image" style="background-image:;position:relative"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1592302526499.jpeg?w=250&amp;h=250" alt="A Ba" /><img class="sticker lazyload" /></div>
+                    <div class="image" style="background-image:unset"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1592302526499.jpeg?w=250&amp;h=250" alt="A Ba" /><img class="sticker lazyload" /></div>
                     <div class="TicketPC__RightBody-sc-1mxgwjh-3 iTDXJa">
                         <div class="TicketPC__TripInfo-sc-1mxgwjh-6 dEwAnK">
                             <div class="bus-info">
@@ -5261,7 +4585,7 @@
         <div id="ticket-v2CJrjCRCZ4wkaAjE4IgIzMDCy4MoCOgoyMi0xMS0yMDIxSBhQHagBxI8C" data-company-name="Tý Nghĩa" data-company-id="34756" data-company-full-trip="true" data-company-selling-config="DEFAULT" class="TicketWrapper__TicketContainer-unfwwx-0 eENoGW">
             <div class="TicketPC__Container-sc-1mxgwjh-0 pzwdb">
                 <div class="TicketPC__BodyFlex-sc-1mxgwjh-1 iuBnBn ticket">
-                    <div class="image" style="background-image:;position:relative"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1600752769971.jpeg?w=250&amp;h=250" alt="Tý Nghĩa" /><img class="sticker lazyload" /></div>
+                    <div class="image" style="background-image:unset"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1600752769971.jpeg?w=250&amp;h=250" alt="Tý Nghĩa" /><img class="sticker lazyload" /></div>
                     <div class="TicketPC__RightBody-sc-1mxgwjh-3 iTDXJa">
                         <div class="TicketPC__TripInfo-sc-1mxgwjh-6 dEwAnK">
                             <div class="bus-info">
@@ -5303,7 +4627,7 @@
         <div id="ticket-v2COTqCRDj6gkaAjA4IgIwMDDD7PQCOgoyMi0xMS0yMDIxSBhQHagB9JgC" data-company-name="Hoàng Long - Hà Nội" data-company-id="35956" data-company-full-trip="true" data-company-selling-config="DEFAULT" class="TicketWrapper__TicketContainer-unfwwx-0 eENoGW">
             <div class="TicketPC__Container-sc-1mxgwjh-0 pzwdb">
                 <div class="TicketPC__BodyFlex-sc-1mxgwjh-1 iuBnBn ticket">
-                    <div class="image" style="background-image:;position:relative"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1610099185801.jpeg?w=250&amp;h=250" alt="Hoàng Long - Hà Nội" /><img class="sticker lazyload" /></div>
+                    <div class="image" style="background-image:unset"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1610099185801.jpeg?w=250&amp;h=250" alt="Hoàng Long - Hà Nội" /><img class="sticker lazyload" /></div>
                     <div class="TicketPC__RightBody-sc-1mxgwjh-3 iTDXJa">
                         <div class="TicketPC__TripInfo-sc-1mxgwjh-6 dEwAnK">
                             <div class="bus-info">
@@ -5346,7 +4670,7 @@
         <div id="ticket-v2CKMGEP0FGgIxMyICMDAwnboLOgoyMi0xMS0yMDIxSBhQHagBumU" data-company-name="Tín Nghĩa" data-company-id="12986" data-company-full-trip="true" data-company-selling-config="DEFAULT" class="TicketWrapper__TicketContainer-unfwwx-0 eENoGW">
             <div class="TicketPC__Container-sc-1mxgwjh-0 pzwdb">
                 <div class="TicketPC__BodyFlex-sc-1mxgwjh-1 iuBnBn ticket">
-                    <div class="image" style="background-image:;position:relative"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1599640577286.jpeg?w=250&amp;h=250" alt="Tín Nghĩa" /><img class="sticker lazyload" /></div>
+                    <div class="image" style="background-image:unset"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1599640577286.jpeg?w=250&amp;h=250" alt="Tín Nghĩa" /><img class="sticker lazyload" /></div>
                     <div class="TicketPC__RightBody-sc-1mxgwjh-3 iTDXJa">
                         <div class="TicketPC__TripInfo-sc-1mxgwjh-6 dEwAnK">
                             <div class="bus-info">
@@ -5393,7 +4717,7 @@
         <div id="ticket-v2CNvFBxD9BRoCMTgiAjAwMMeP7wI6CjIyLTExLTIwMjFIGFAdqAHInAE" data-company-name="Queen Cafe" data-company-id="20040" data-company-full-trip="false" data-company-selling-config="DEFAULT" class="TicketWrapper__TicketContainer-unfwwx-0 eENoGW">
             <div class="TicketPC__Container-sc-1mxgwjh-0 pzwdb">
                 <div class="TicketPC__BodyFlex-sc-1mxgwjh-1 iuBnBn ticket">
-                    <div class="image" style="background-image:;position:relative"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1593829680062.jpeg?w=250&amp;h=250" alt="Queen Cafe" /><img class="sticker lazyload" /></div>
+                    <div class="image" style="background-image:unset"><img class="operator lazyload" data-src="//static.vexere.com/production/images/1593829680062.jpeg?w=250&amp;h=250" alt="Queen Cafe" /><img class="sticker lazyload" /></div>
                     <div class="TicketPC__RightBody-sc-1mxgwjh-3 iTDXJa">
                         <div class="TicketPC__TripInfo-sc-1mxgwjh-6 dEwAnK">
                             <div class="bus-info">
